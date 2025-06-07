@@ -5,5 +5,7 @@ jobs:
   vanblog_deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: docker ps -a
+      - name: chectout_code
+        uses: actions/checkout@v2
+      - cat ./app.sh
 
