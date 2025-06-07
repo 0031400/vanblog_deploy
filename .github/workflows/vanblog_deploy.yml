@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: chectout_code
-        uses: actions/checkout@v2
-      - run: cat ./app.sh
+        uses: actions/checkout@v4
+      - run: bash ./app.sh
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ./app.sh
 
