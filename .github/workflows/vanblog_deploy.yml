@@ -1,0 +1,9 @@
+name: vanblog_deploy
+run-name: vanblog_deploy 
+on: [push]
+jobs:
+  vanblog_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world"
+
