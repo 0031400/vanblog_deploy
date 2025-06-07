@@ -9,11 +9,14 @@
 - 修改 app.sh 里面的变量
 - 运行 app.sh 一次
 - 以后直接使用 entrypoint.sh 运行  
+
 注意:
 - 需要安装 nodejs 和 caddy 和 mongodb
 - 占用了 3000 3001 8360 端口
+
 变量配置推荐修改:
 - VAN_BLOG_DATABASE_URL  
+
 不推荐修改:
 - VAN_BLOG_SERVER_URL
 - PORT
