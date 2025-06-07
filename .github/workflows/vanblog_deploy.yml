@@ -12,4 +12,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: ./app.sh
+          tag_name: v1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
