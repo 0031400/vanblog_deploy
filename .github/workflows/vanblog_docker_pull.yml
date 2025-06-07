@@ -1,13 +1,13 @@
-name: vanblog_deploy
-run-name: vanblog_deploy 
-on: [push]
+name: vanblog_docker_pull
+run-name: vanblog_docker_pull 
+on: [vanblog_docker_pul]
 jobs:
   vanblog_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: chectout_code
         uses: actions/checkout@v4
-      - run: bash ./app.sh
+      - run: bash ./docker_pull.sh
       - name: release
         uses: softprops/action-gh-release@v2
         with:
