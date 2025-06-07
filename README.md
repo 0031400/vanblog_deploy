@@ -1,5 +1,8 @@
 这个是为了在主机部署 vanblog ，但是不使用 docker 而写的仓库。  
 原仓库地址 https://github.com/Mereithhh/van-blog  
+
+release 文件来源: github action 生成
+
 使用方法
 - 下载 release 文件，这个是服务端 nodejs 打包好的压缩包，对的，把node_modules都打包进去了。  
   https://github.com/0031400/vanblog_deploy/releases/download/v1.0/vanblog.tar.gz
@@ -15,11 +18,13 @@
 - 占用了 3000 3001 8360 端口
 
 变量配置推荐修改:
-- VAN_BLOG_DATABASE_URL  
-- CADDY_PORT
+- VAN_BLOG_DATABASE_URL mongodb url 
+- CADDY_PORT 用户访问的端口 http ( 我喜欢用nginx )
+- HOME 运行的用户家目录
+- PWD 服务端所在目录
 
 不推荐修改:
-- VAN_BLOG_SERVER_URL
-- PORT
+- VAN_BLOG_SERVER_URL 有个3000端口不好改
+- PORT 这个是3001 不好改
 
 访问地址: CADDY_PORT
