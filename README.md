@@ -16,7 +16,10 @@
 
 变量配置推荐修改:
 - VAN_BLOG_DATABASE_URL  
+- CADDY_PORT
 
 不推荐修改:
 - VAN_BLOG_SERVER_URL
 - PORT
+
+访问地址: CADDY_PORT
