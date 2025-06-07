@@ -7,5 +7,5 @@ jobs:
     steps:
       - name: chectout_code
         uses: actions/checkout@v2
-      - cat ./app.sh
+      - run: cat ./app.sh
 
